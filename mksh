@@ -1,5 +1,10 @@
 #!/bin/bash
 
-touch $1
-chmod a+x $1
-vim $1
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied"
+else
+        touch $1
+        chmod a+x $1
+        vi $1
+fi
