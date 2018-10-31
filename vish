@@ -4,7 +4,7 @@ if [ $# -eq 0 ]
   then
     echo "No arguments supplied"
 else
-        touch $1
-        chmod a+x $1
-        vi $1
+        touch "$1"
+        chmod a+x "$1"
+        vi "$1"
 fi
